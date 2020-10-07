@@ -2,9 +2,15 @@
     "name": "git-commit-syntax",
     "displayName": "git-commit-syntax",
     "description": "Syntax for git commit messages",
+    "publisher": "perrinjerome",
+    "license": "MIT",
     "version": "0.0.1",
     "engines": {
         "vscode": "^1.49.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/perrinjerome/git-commit-syntax"
     },
     "categories": [
         "Programming Languages"
@@ -13,7 +19,7 @@
         "languages": [{
             "id": "git-commit",
             "aliases": ["Git Commit Message", "git-commit"],
-            "extensions": [".COMMIT_EDITMSG",".MERGE_MSG"],
+            "extensions": ["COMMIT_EDITMSG", "MERGE_MSG"],
             "configuration": "./language-configuration.json"
         }],
         "grammars": [{
