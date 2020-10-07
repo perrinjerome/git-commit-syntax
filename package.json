@@ -1,0 +1,25 @@
+{
+    "name": "git-commit-syntax",
+    "displayName": "git-commit-syntax",
+    "description": "Syntax for git commit messages",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.49.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "git-commit",
+            "aliases": ["Git Commit Message", "git-commit"],
+            "extensions": [".COMMIT_EDITMSG",".MERGE_MSG"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "git-commit",
+            "scopeName": "text.git-commit",
+            "path": "./syntaxes/git-commit.tmLanguage"
+        }]
+    }
+}
